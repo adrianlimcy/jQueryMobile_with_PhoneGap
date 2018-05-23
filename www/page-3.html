@@ -2,13 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>This is Page 2</title>
+    <title>This is Page 3</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="js/custom-jqm-transition.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
   </head>
   <body class="container">
-    <div data-role="page" id="page-two">
+    <div data-role="page" id="page-three" data-title="Page 3" data-dom-cache="true">
       <div data-role="header">
         <h1>
           Page 3
@@ -16,11 +17,13 @@
       </div>
       <div data-role="content">
         <p>Body copy for page 3</p>
-        <a href="index.html">Link to Page 1</a>
+        <p><a href="index.html">Link to Page 1</a></p>
+        <p><a href="/deep_link/test_deep_link.html" rel="external">Link to Page 4</a></p>
       </div>
       <div data-role="footer">
         Copyright
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="js/index.js"></script>
 </html>

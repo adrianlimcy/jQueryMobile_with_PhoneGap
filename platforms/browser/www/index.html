@@ -9,6 +9,7 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="js/custom-jqm-transition.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
   </head>
   <body class="container">
@@ -20,13 +21,19 @@
       </div>
       <div data-role="content">
         <p>Body copy for page 1</p>
-        <a href="#page-two">Link to Page 2</a>
+        <p><a href="#page-two">Link to Page 2</a></p>
+        <p>Using Transitions</p>
+        <p><a href="page-3.html" data-transition="pop">Link to Page 3</a></p>
+        <p><a href="../deep_link/test_deep_link.html" data-transition="flip">Link to Page 4</a></p>
+        <p><a href="#test-hash">Link to test hash</a></p>
+        <p>Using Dialog</p>
+        <p><a href="../deep_link/test_deep_link.html" data-rel="dialog">Dialog to Page 4</a></p>
       </div>
       <div data-role="footer">
         Copyright
       </div>
     </div>
-    <div data-role="page" id="page-two">
+    <div data-role="page" id="page-two" data-title="Page 2">
       <div data-role="header">
         <h1>
           Page 2
@@ -34,12 +41,30 @@
       </div>
       <div data-role="content">
         <p>Body copy for page 2</p>
-        <a href="#page-one">Link to Page 1</a>
-        <a href="page-3.html">Link to Page 3</a>
+        <p><a href="#page-one">Link to Page 1</a></p>
+        <p><a href="page-3.html">Link to Page 3</a></p>
+        <p><a href="#" data-rel="back">Back Button</a></p>
+      </div>
+      <div data-role="footer">
+        Copyright
+      </div>
+    </div>
+    <div data-role="page" id="test-hash" data-title="Page 2">
+      <div data-role="header">
+        <h1>
+          Page test hash
+        </h1>
+      </div>
+      <div data-role="content">
+        <p>Body copy for test hash</p>
+        <p><a href="#page-one">Link to Page 1</a></p>
+        <p><a href="page-3.html" data-prefetch>Link to Page 3</a></p>
+        <p><a href="../deep_link/test_deep_link.html">Link to Page 4</a></p>
       </div>
       <div data-role="footer">
         Copyright
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="js/index.js"></script>
 </html>

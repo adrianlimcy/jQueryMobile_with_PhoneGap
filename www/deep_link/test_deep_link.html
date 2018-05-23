@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Testing Deep Link</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="../js/custom-jqm-transition.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  </head>
+  <body class="container">
+    <div data-role="page" id="page-4" data-title="Page 4">
+      <div data-role="header">
+        <h1>
+          Page 4
+        </h1>
+      </div>
+      <div data-role="content">
+        <p>Body copy for Page 4</p>
+        <p><a href="#page-deep-link">Link to Deep Link</a></p>
+        <p><a href="../index.html">Link to Page 1</a></p>
+      </div>
+      <div data-role="footer">
+        Copyright
+      </div>
+    </div>
+    <div data-role="page" id="page-deep-link" data-title="Deep Link Page">
+      <div data-role="header">
+        <h1>
+          Deep Link
+        </h1>
+      </div>
+      <div data-role="content">
+        <p>Body copy for Deep Link</p>
+        <p><a href="../index.html" rel="external">Link to Page 1</a></p>
+      </div>
+      <div data-role="footer">
+        Copyright
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../js/index.js"></script>
+</html>
