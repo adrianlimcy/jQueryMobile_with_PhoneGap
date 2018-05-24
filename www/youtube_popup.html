@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Page 1 - jQuery Mobile: Design and Develop
+    </title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script type="text/javascript" src="../js/custom-jqm-transitions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <style type="text/css">
+      .ui-dialog .ui-header,
+      .ui-dialog .ui-content,
+      .ui-dialog .ui-footer {
+        max-width: : 640px
+      }
+    </style>
+  </head>
+  <body class="container">
+    <div data-role="page" id="youtube-test" data-title="Youtube Test">
+      <div data-role="header"><h1>Youtube Popup Test</h1></div>
+      <div data-role="content">
+        <p>President Barack Obama's Inaugural Address</p>
+        <p>
+          <a href="popup-window.html" data-rel="dialog"
+                                      data-transition="slidedown"
+                                      data-role="button"
+                                      data-inline="true"
+                                      data-icon="arrow-r"
+                                      data-iconpos="right">
+            Play now
+          </a>
+        </p>
+      </div>
+      <div data-role="footer">Copyright</div>
+    </div>
+    <div data-role="page" id="multipage-dialog">
+      <div data-role="header">
+        <h1>Multi-page dialog window</h1>
+      </div>
+      <div data-role="content">
+        <p><a href="#" data-rel="back">Back</a></p>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../js/main.js"></script>
+</html>
