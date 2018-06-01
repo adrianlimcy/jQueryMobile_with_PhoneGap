@@ -15,9 +15,15 @@
   <body class="container">
     <div data-role="page" id="page-one" data-title="Page 1">
       <div data-role="header">
-        <h1>
-          Page 1
-        </h1>
+        <img src="../img/logo.png">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="edit_profile.html" rel="external">Profile</a></li>
+            <li><a href="youtube_popup.html" rel="external">Video</a></li>
+            <li><a href="dialog.html" rel="external">Dialog</a></li>
+            <li><a href="../deep_link/test_deep_link.html" data-rel="dialog">Deep Link</a></li>
+          </ul>
+        </div>
       </div>
       <div data-role="content">
         <p>Body copy for page 1</p>
@@ -26,14 +32,9 @@
         <p><a href="page-3.html" data-transition="pop">Link to Page 3</a></p>
         <p><a href="../deep_link/test_deep_link.html" data-transition="flip">Link to Page 4</a></p>
         <p><a href="#test-hash">Link to test hash</a></p>
-        <p>Using Dialog</p>
-        <p><a href="../deep_link/test_deep_link.html" data-rel="dialog">Dialog to Page 4</a></p>
-        <p>Chapter 5</p>
-        <p><a href="dialog.html" rel="external">Link to Dialog</a></p>
-        <p><a href="youtube_popup.html" rel="external">Link to Video</a></p>
       </div>
       <div data-role="footer">
-        Copyright
+        <h4>Copyright</h4>
       </div>
     </div>
     <div data-role="page" id="page-two" data-title="Page 2">
