@@ -15,19 +15,67 @@
       .align-right {
         float: right;
       }
+      .ui-grid-b .ui-block-b {
+        text-align: center;
+      }
+      .ui-grid-b .ui-block-c {
+        text-align: right;
+      }
     </style>
   </head>
   <body>
-    <div data-role="page">
+    <div data-role="page" id="profile_home">
       <div data-role="header">
-        <h1>John Doe</h1>
-        <a href="#options-dialog" data-icon="gear" class="ui-btn-right" data-rel="dialog">
-          Edit Profile
-        </a>
+        <div class="ui-grid-b">
+          <div class="ui-block-a">
+            <div data-role="controlgroup" data-type="horizontal">
+              <a href="index.html" data-role="button" data-icon="home">Home</a>
+              <a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Back</a>
+            </div>
+          </div>
+          <div class="ui-block-b">
+            <h2>John Doe</h2>
+          </div>
+          <div class="ui-block-c">
+            <div data-role="controlgroup" data-type="horizontal">
+              <a href="#" data-role="button" data-icon="delete">Delete</a>
+              <!-- <a href="#options-dialog" data-icon="gear" class="ui-btn-right" data-rel="dialog"> -->
+              <a href="#options-dialog" data-icon="gear" data-role="button" data-rel="dialog">
+                Edit Profile
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <div data-role="content">
         <p>123 E street</p>
         <p>Chicago, Il 60622</p>
+        <div class="ui-grid-c">
+          <div class="ui-block-a">
+            <div class="ui-bar ui-bar-b">First Row</div>
+          </div>
+          <div class="ui-block-b">
+            <div class="ui-bar ui-bar-b">B</div>
+          </div>
+          <div class="ui-block-c">
+            <div class="ui-bar ui-bar-b">C</div>
+          </div>
+          <div class="ui-block-d">
+            <div class="ui-bar ui-bar-b">D</div>
+          </div>
+          <div class="ui-block-a">
+            <div class="ui-bar ui-bar-b">Second Row</div>
+          </div>
+          <div class="ui-block-b">
+            <div class="ui-bar ui-bar-b">B</div>
+          </div>
+          <div class="ui-block-c">
+            <div class="ui-bar ui-bar-b">C</div>
+          </div>
+          <div class="ui-block-d">
+            <div class="ui-bar ui-bar-b">D</div>
+          </div>
+        </div>
       </div>
       <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
         <h4 class="ui-title" tabindex="0" role="heading" aria-level="1">
@@ -44,15 +92,15 @@
           <a href="#" data-role="button" data-icon="check">Save</a>
         </div>
         <div data-role="controlgroup" data-type="horizontal" class="align-left">
-          <a href="#" data-role="button" data-icon="home">Home</a>
-          <a href="#" data-role="button" data-icon="arrow-l">Back</a>
+          <a href="#profile_home" data-role="button" data-icon="home">Home</a>
+          <a href="#" data-rel="back" data-role="button" data-icon="arrow-l">Back</a>
         </div>
 
         <!-- <h1>Edit John Doe</h1> -->
       </div>
       <div data-role="content">
         <label for="profile-image">Profile Image</label>
-        <p><img src="#"></p>
+        <p><img src="../img/logo.png"></p>
         <input type="file" id="profile-image" name="profile-image">
         <label for="street-address">Street Address</label>
         <input type="text" id="street-address" name="street-address" value="123 E Street">
