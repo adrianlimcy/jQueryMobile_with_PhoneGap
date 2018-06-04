@@ -19,6 +19,7 @@
         background-color: #fff;
       }
     </style>
+    <script src="../js/jquery.mobile.nestedlists.js"></script>
   </head>
   <body class="container">
     <div data-role="page" id="page-one" data-title="Page 1">
@@ -33,6 +34,8 @@
           </ul>
         </div>
       </div>
+
+      <h3>Double grid</h3>
       <div data-role="content" class="ui-grid-a">
         <div class="ui-block-a block-title">
           <p>Body copy for page 1</p>
@@ -41,6 +44,7 @@
           <p><a href="#page-two">Link to Page 2</a></p>
         </div>
       </div>
+
       <h3>Grids and Transitions</h3>
       <div data-role="content" class="ui-grid-b">
         <div class="ui-block-a">
@@ -59,6 +63,8 @@
           </div>
         </div>
       </div>
+
+      <h3>Collapsible Stuff</h3>
       <div data-role="content">
         <div data-role="collapsible" data-collapsed="false">
           <h3>Collapsible content header</h3>
@@ -85,10 +91,150 @@
           </div>
         </div>
       </div>
+
+      <h3>Lists</h3>
+      <div data-role="content">
+        <ul data-role="listview" class="ui-listview" data-inset="true">
+          <li data-theme="c"
+              class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+            <div class="ui-btn-inner ui-li" aria-hidden="true">
+              <div class="ui-btn-text">
+                <a href="#" class="ui-link-inherit">Home</a>
+              </div>
+              <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
+            </div>
+          </li>
+          <li class="ui-li"><a href="#">Articles</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Books</a></li>
+          <li>
+            <h4>More</h4>
+            <p>Find more resources on JQuery Mobile</p>
+            <p>Nested listview is no longer supported in 1.4, needs plugin</p>
+            <ul data-role="listview">
+              <li><a href="#">things</a></li>
+              <li><a href="#">other things  </a></li>
+            </ul>
+        </ul>
+      </div>
+
+      <div data-role="content">
+        <ul data-role="listview" data-split-icon="gear" data-inset="true">
+          <li>
+            <a href="#item-detail">
+              <h3>Using UI components in jQuery Mobile</h3>
+              <p>Many UI components are avaliable in jQuery Mobile framework</p>
+            </a>
+            <a href="#item-purchase" data-rel="dialog">Buy now</a>
+          </li>
+          <li>
+            <a href="#item-detail">
+              <h3>Using UI components in jQuery API</h3>
+              <p>The jQuery Mobile API provides an extra level of control over the customization of your mobile website</p>
+            </a>
+            <a href="#item-purchase" data-rel="dialog">Buy now</a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="content">
+        <ul data-role="listview">
+          <li data-role="list-divider">The Beatles</li>
+          <li>Meet The Beatles</li>
+          <li>A Hard Day's Night</li>
+          <li>Help!</li>
+          <li>Rubber Soul</li>
+          <li>Revolver</li>
+          <li data-role="list-divider">The Doors</li>
+          <li>The Doors</li>
+          <li>Strange Days</li>
+          <li>Waiting for the Sun</li>
+          <li>The Soft Parade</li>
+          <li>Morrison Hotel</li>
+          <li data-role="list-divider">The Jimi Hendrix Experience</li>
+          <li>Are you Experienced</li>
+          <li>Bold as Love</li>
+          <li>Electic Ladyland</li>
+        </ul>
+      </div>
+      <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+          <li>
+            <a href="#inbox">Inbox
+              <span class="ui-li-count">12</span>
+            </a>
+          </li>
+          <li>
+            <a href="#outbox">Outbox
+              <span class="ui-li-count">0</span>
+            </a>
+          </li>
+          <li>
+            <a href="#trash">Trash
+              <span class="ui-li-count">1024</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+          <li>The Beatles
+            <span class="ui-li-count">5</span>
+            <ul data-role="listview">
+              <li>Meet The Beatles</li>
+              <li>A Hard Day's Night</li>
+              <li>Help!</li>
+              <li>Rubber Soul</li>
+              <li>Revolver</li>
+            </ul>
+          </li>
+          <li>The Doors
+            <span class="ui-li-count">5</span>
+            <ul data-role="listview">
+              <li>The Doors</li>
+              <li>Strange Days</li>
+              <li>Waiting for the Sun</li>
+              <li>The Soft Parade</li>
+              <li>Morrison Hotel</li>
+            </ul>
+          </li>
+          <li>The Jimi Hendrix Experience
+            <span class="ui-li-count">3</span>
+            <ul data-role="listview">
+              <li>Are you Experienced</li>
+              <li>Bold as Love</li>
+              <li>Electic Ladyland</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="content">
+        <ul data-role="listview">
+          <li>
+            <a href="#led-zeppelin/led-zepplin-iv">
+              <img src="../img/logo.png">
+              <h3>Led Zepplin</h3>
+              <p>Led Zepplin IV</p>
+            </a>
+          </li>
+          <li>
+            <a href="#led-zeppelin/house-of-the-holy">
+              <img src="../img/logo.png">
+              <h3>Led Zepplin</h3>
+              <p>House of the Holy</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <div data-role="footer">
         <h4>Copyright</h4>
       </div>
     </div>
+
+<!-- Page 2 stuff -->
     <div data-role="page" id="page-two" data-title="Page 2">
       <div data-role="header">
         <h1>
