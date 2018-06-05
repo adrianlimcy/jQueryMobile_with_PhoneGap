@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 9 - Search Filtering</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script type="text/javascript" src="../js/custom-jqm-transitions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="../js/filter.js?125558"></script>
+    <style type="text/css">
+      .ui-grid-a .ui-block-b {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-role="page" id="beatles-page">
+      <div data-role="header">
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <div data-role="controlgroup" data-type="horizontal">
+              <a href="index.html" data-role="button" data-icon="home">Home</a>
+              <a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Back</a>
+            </div>
+          </div>
+          <div class="ui-block-b">
+            <div data-role="controlgroup" data-type="horizontal">
+              <a href="#" data-role="button" data-icon="check">Ok</a>
+              <a href="#" data-icon="arrow-r" data-role="button">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-role="content">
+        <ul id="beatles-listview" data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="Search the song list ...">
+          <li>Across the Universe</li>
+          <li>Act Naturally</li>
+          <li>Ain't She Sweet</li>
+          <li>All I've Got To Do</li>
+          <li>All My Loving</li>
+          <li>All Together now</li>
+          <li>All You Need Is Love</li>
+          <li>And I Love Her</li>
+          <li>And Your Bird Can Sing</li>
+          <li>Anna (Go To Him)</li>
+          <li>Another Girl</li>
+          <li>Any Time At All</li>
+          <li>Ask My Why</li>
+          <li>Baby It's You</li>
+          <li>Baby, You're A Rich Man</li>
+          <li>Baby's In Black</li>
+          <li>Back In The U.S.S.R.</li>
+          <li>Bad Boy</li>
+          <li>The Ballad Of John And Yoko</li>
+          <li>Because</li>
+          <li>Being For The Benefit of Mr. Kite</li>
+          <li>Besame Mucho</li>
+          <li>Birthday</li>
+          <li>Black Bird</li>
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>
