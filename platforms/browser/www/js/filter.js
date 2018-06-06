@@ -13,6 +13,7 @@
 // $(function(){
   $(document).on("pagecontainercreate", function(event, ui) {
     console.log("page loaded");
+    // $('#beatles-listview').listview('option', 'filterCallback', defaultSearch);
   });
 // });
 // });

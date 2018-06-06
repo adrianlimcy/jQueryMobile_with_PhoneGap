@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 10 - Forms</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script type="text/javascript" src="../js/custom-jqm-transitions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="form-page">
+      <div data-role="content">
+        <h3>Basics</h3>
+        <p>Number: <input type="number" name="number" id="number" /></p>
+        <p>Number + Pattern: <input type="number" name="number+pattern" pattern="[0-9]*" id="number-pattern" /></p>
+        <p>Email: <input type="email" name="email" id="email" /></p>
+        <p>Time: <input type="time" name="time" id="time" /></p>
+
+        <h3>Checkboxes and Radio</h3>
+        <label for="my-radio">Radio Button Example</label>
+        <input type="radio" name="name" id="my-radio" class="my-radio" />
+        <label for="my-checkbox">Checkbox Example</label>
+        <input type="checkbox" name="name" id="my-checkbox" class="my-checkbox" />
+
+        <h3>Field Contain - Vertical</h3>
+        <div data-role="fieldcontain">
+          <fieldset data-role="controlgroup">
+            <legend>Pizza ingredients:</legend>
+            <label for="cheese">Cheese</label>
+            <input type="checkbox" name="pizza-ingredients" id="cheese" value="cheese" />
+            <label for="mushroom">Mushroom</label>
+            <input type="checkbox" name="pizza-ingredients" id="mushroom" value="mushroom" />
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" name="pizza-ingredients" id="pepperoni" value="pepperoni" />
+            <label for="green-pepper">Green Pepper</label>
+            <input type="checkbox" name="pizza-ingredients" id="green-pepper" value="green-pepper" />
+          </fieldset>
+        </div>
+
+        <h3>Field Contain - Horizontal</h3>
+        <div data-role="fieldcontain">
+          <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>Font styles:</legend>
+            <label for="bold" class="bold">b</label>
+            <input type="checkbox" name="font-style" id="bold" value="bold" />
+            <label for="italic" class="italic">i</label>
+            <input type="checkbox" name="font-style" id="italic" value="italic" />
+            <label for="underline" class="underline">u</label>
+            <input type="checkbox" name="font-style" id="underline" value="underline" />
+          </fieldset>
+        </div>
+
+        <h3>Select - no fieldcontain</h3>
+        <label for="select-cabin">Cabin Type</label>
+        <select name="select-cabin" id="select-cabin">
+          <option value="economy">Economy</option>
+          <option value="business">Business</option>
+          <option value="first">First</option>
+        </select>
+        <h3>Select - fieldcontain</h3>
+        <div data-role="fieldcontain">
+          <fieldset data-role="controlgroup">
+            <legend>Flight Cabin:</legend>
+            <label for="select-cabin">Cabin Type:</label>
+            <select name="select-cabin" id="select-cabin">
+              <option value="economy">Economy</option>
+              <option value="business">Business</option>
+              <option value="first">First</option>
+            </select>
+          </fieldset>
+        </div>
+
+        <h3>Sliders</h3>
+        <label for="my-slider">My Slider</label>
+        <input type="range" name="slider" id="my-slider" value="50" min="0" max="100"/>
+        <input type="range" name="slider" id="my-slider" value="50" min="0" max="100" steps="10"/>
+        <input type="range" name="slider" id="my-slider" value="50" min="0" max="100" steps="10" data-highlight="true"/>
+
+        <h3>Flip Toggle</h3>
+        <label for="flip-switch">Do you like pizza?</label>
+        <select type="slider" id="flip-switch" data-role="slider">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+      </div>
+    </div>
+  </body>
+</html>
