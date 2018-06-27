@@ -7,9 +7,32 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <script type="text/javascript" src="../js/custom-jqm-transitions.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <style type="text/css">
+      .ui-grid-a .ui-block-b {
+        text-align: right;
+      }
+    </style>
   </head>
   <body>
     <div data-role="page" id="form-page">
+      <div data-role="header">
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <div data-role="controlgroup" data-type="horizontal">
+              <a href="index.html" data-role="button" data-icon="home">Home</a>
+              <a href="#" data-role="button" data-icon="arrow-l" data-rel="back">Back</a>
+            </div>
+          </div>
+          <div class="ui-block-b">
+            <div data-role="controlgroup" data-type="horizontal">
+              <a href="#" data-role="button" data-icon="check">Ok</a>
+              <a href="#" data-icon="arrow-r" data-role="button">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <div data-role="content">
         <h3>Basics</h3>
         <p>Number: <input type="number" name="number" id="number" /></p>

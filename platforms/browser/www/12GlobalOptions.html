@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mobile API Global Options</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script type="text/javascript" src="../js/custom-jqm-transitions.js"></script>
+    <script type="text/javascript" src="../js/custom-jqm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <link rel="stylesheet" href="../css/jqmtv.css">
+  </head>
+  <body>
+    <div data-jquerymobiletv-role="page" id="mypage">
+      <div data-jquerymobiletv-role="header"><h1>Page name</h1>
+      </div>
+      <!-- <div data-jquerymobiletv-role="content"><p>Body</p>
+      </div> -->
+      <div data-jquerymobiletv-role="content">
+        <ul data-jquerymobiletv-role="listview" id="my-list">
+        </ul>
+      </div>
+      <div data-jquerymobiletv-role="footer"><h2>Copyright</h2>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $("#mypage").css('display','none');
+      var namesArray = new Array("Tom", "Lucy","Lee","Chris","Albert","Frank");
+      for(var i=0; i < namesArray.length; i++) {
+        $('#my-list').append('<li><a href="#">' + namesArray[i] + '</a></li>');
+      }
+      $.mobile.autoInitializePage = true;
+      $("#mypage").fadeIn(1000);
+    </script>
+  </body>
+</html>
